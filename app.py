@@ -1,47 +1,5 @@
 import streamlit as st
 import openai
-
-
-'''standards_dict = {
-    'Kindergarten': {
-        'ELA': {
-            'Reading: Literature': 'Understand and appreciate literature.',
-            'Reading: Informational Text': 'Analyze, comprehend, and evaluate informational texts.'
-        },
-        'Math': {
-            'Counting and Cardinality': 'Develop understanding of numbers and number systems.',
-            'Operations and Algebraic Thinking': 'Understand and apply arithmetic operations and algebraic properties.'
-        }
-    },
-    'Grade 1': {
-        'ELA': {
-            'Writing': 'Develop clear and coherent writing skills.',
-            'Speaking and Listening': 'Cultivate effective communication skills.'
-        },
-        'Math': {
-            'Number and Operations in Base Ten': 'Comprehend the place value system, perform operations with multi-digit whole numbers.',
-            'Geometry': 'Understand and apply properties, measurement, and classification of geometric shapes.'
-        }
-    },
-    'Grade 2': {
-        'ELA': {
-            'Language': 'Refine understanding and application of standard English grammar and usage.',
-            'Reading: Literature': 'Understand and appreciate literature.'
-        },
-        'Math': {
-            'Measurement and Data': 'Convert, interpret, and represent various types of measurement and data.',
-            'Statistics and Probability': 'Develop the ability to investigate patterns, make inferences, and draw conclusions based on data.'
-        }
-    }
-}
-
-grade = st.selectbox('Select Grade', list(standards_dict.keys()))
-
-subject = st.selectbox('Select Subject', list(standards_dict[grade].keys()))
-
-standard = st.selectbox('Select Standard', list(standards_dict[grade][subject].keys()))
-
-st.write('Description: ', standards_dict[grade][subject][standard])'''
 # Set up the OpenAI API key
 openai.api_key = st.secrets.openai_key
 if 'student_answers' not in st.session_state:
