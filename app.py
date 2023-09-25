@@ -43,7 +43,7 @@ standard = st.selectbox('Select Standard', list(standards_dict[grade][subject].k
 
 st.write('Description: ', standards_dict[grade][subject][standard])'''
 # Set up the OpenAI API key
-openai.api_key = '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'
+openai.api_key = st.secrets.openai_key
 if 'student_answers' not in st.session_state:
     st.session_state.student_answers = ""
 
